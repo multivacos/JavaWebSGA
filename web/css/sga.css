@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/06/2019, 10:34:40 PM
+    Author     : MELANY
+*/
+.content-wrapper{
+    /*min-height: auto !important; */
+}
+.modal-header{
+    background-color: #00a7d0;
+}
+.modal-title{
+    color: white;
+}
