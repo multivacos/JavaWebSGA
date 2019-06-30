@@ -63,6 +63,8 @@ public class ProveedorController extends HttpServlet {
             proveedorService.busca(request, response);
         }else if (metodo.equals("elimina")) {
             proveedorService.elimina(request, response);
+        }else if (metodo.equals("ubica")) {
+            proveedorService.ubica(request, response);
         }
  
     }

@@ -14,10 +14,9 @@
         <title>Proveedor</title>
     </head>
     <body>
-    <script src="js/proveedor.js"></script>
     <section class="content-header">
         <h1>
-            Proveedor <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Nuevo</button>
+            Proveedor <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Nuevo</button> <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModalSearch">Buscar</button>
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -70,58 +69,113 @@
     </div>
  </section>
        
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Insertar nuevo proveedor</h4>
-        </div>
-        <div class="modal-body">
-          <form action="proveedor" method="post" class="form-horizontal">
-            <input type="hidden" name="metodo" value="registra">
-            <div class="box-body">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">RUC</label>
+      <!-- Modal - agregar -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" maxlength="11" name="ruc" placeholder="Inserta el numero de RUC" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">RAZON SOCIAL</label>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Insertar nuevo proveedor</h4>
+            </div>
+            <div class="modal-body">
+              <form action="proveedor" method="post" class="form-horizontal">
+                <input type="hidden" name="metodo" value="registra">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">RUC</label>
 
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" name="razonSocial" placeholder="Inserta la razon social" required>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" maxlength="11" name="ruc" placeholder="Inserta el numero de RUC" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">TELEFONO</label>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">RAZON SOCIAL</label>
 
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" maxlength="9" name="telefono" placeholder="Inserta el telefono" required>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="razonSocial" placeholder="Inserta la razon social" required>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">DIRECCION</label>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">TELEFONO</label>
 
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" name="direccion" placeholder="Inserta la direccion" required>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" maxlength="9" name="telefono" placeholder="Inserta el telefono" required>
+                        </div>
                     </div>
-                </div>          
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-success">Guardar</button>
-                  <button type="reset" class="btn btn-warning">Limpiar</button>
-                </div>
-        </form>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">DIRECCION</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="direccion" placeholder="Inserta la direccion" required>
+                        </div>
+                    </div>          
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">Guardar</button>
+                      <button type="reset" class="btn btn-warning">Limpiar</button>
+                    </div>
+            </form>
+            </div>
+          </div>
+
         </div>
       </div>
-      
-    </div>
-  </div>
-  </div>
+      </div>
+      <!--Modal agregar - fin-->
+      <!-- Modal - busqueda -->
+      <div class="modal fade" id="myModalSearch" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Buscar Proveedores</h4>
+            </div>
+            <div class="modal-body">
+              <form action="proveedor" method="post" class="form-horizontal">
+                <input type="hidden" name="metodo" value="ubica">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">RUC</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" maxlength="11" name="ruc" placeholder="Ingresa un numero">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">RAZON SOCIAL</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="razonSocial" placeholder="Ingresa una letra">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">TELEFONO</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" maxlength="9" name="telefono" placeholder="Ingresa un numero">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">DIRECCION</label>
+
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="direccion" placeholder="Ingresa una letra">
+                        </div>
+                    </div>          
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-success">Buscar</button>
+                      <button type="reset" class="btn btn-warning">Limpiar</button>
+                    </div>
+            </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      <!--Modal busqueda - fin-->
     </body>
 </html>

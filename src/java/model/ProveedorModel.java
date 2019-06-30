@@ -11,6 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import util.MysqlDBConexion;
@@ -131,5 +132,32 @@ public class ProveedorModel {
             Logger.getLogger(ProveedorModel.class.getName()).log(Level.SEVERE, null, ex);
         }
         return salida;
+    }
+    
+    public List<Proveedor> listaUbicaProveedor(Proveedor p){
+        ArrayList<Proveedor> data = new ArrayList<>();
+        try {
+            PreparedStatement pstm;
+            Connection conn;
+            conn = MysqlDBConexion.getConexion();
+            ResultSet rs;
+            String sql = "select * from proveedor  where ruc like '%" + p.getRuc() + "%' and razon_social like '%" + p.getRazonSocial()+ "%' and telefono like '%" + p.getTelefono()+ "%' and direccion like '%" + p.getDireccion()+ "%'";
+            pstm = conn.prepareStatement(sql);
+            rs = pstm.executeQuery();
+            
+            Proveedor obj;
+            while(rs.next()){
+                obj = new Proveedor();
+                obj.setIdProveedor(rs.getInt("id_proveedor"));
+                obj.setRuc(rs.getString("ruc"));
+                obj.setRazonSocial(rs.getString("razon_social"));
+                obj.setTelefono(rs.getString("telefono"));
+                obj.setDireccion(rs.getString("direccion"));
+                data.add(obj);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ProveedorModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return data;
     }
 }

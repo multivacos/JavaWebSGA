@@ -103,11 +103,26 @@ public class ProveedorService {
         //Se lista
         lista(request, response);
     } 
-    
-        public void carga(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
-        //Se reenvia el request (con los datos) al jsp listaAlumno.jsp
-        ViewResolve.showMain("proveedor/insertarProveedor.jsp", request, response);
+    public void ubica(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String ruc = request.getParameter("ruc");
+        String razonSocial = request.getParameter("razonSocial");
+        String telefono = request.getParameter("telefono");
+        String direccion = request.getParameter("direccion");
+        
+        Proveedor p = new Proveedor();
+        p.setRuc(ruc);
+        p.setRazonSocial(razonSocial);
+        p.setTelefono(telefono);
+        p.setDireccion(direccion);
+        ProveedorModel model = new ProveedorModel();
+        List<Proveedor> data = model.listaUbicaProveedor(p);
+        
+        //Se almacena en memoria llamada request
+        request.setAttribute("data", data);
+        
+        //Se reenvia el request (con los datos) al jsp listaProveedor.jsp
+        ViewResolve.showMain("proveedor/listaProveedor.jsp", request, response);
     }
     
 }
