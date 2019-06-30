@@ -27,4 +27,12 @@ public class ViewResolve {
         request.getRequestDispatcher("/view/" + nameView).forward(request, response);
 
     }
+
+    public static Object show(String proveedorlistaProveedorjsp) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public static void showMain(String proveedorinsertarProveedorjsp) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

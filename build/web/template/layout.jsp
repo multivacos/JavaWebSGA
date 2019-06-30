@@ -111,16 +111,16 @@
                             <!-- User Account: style can be found in dropdown.less -->
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="lib/plantilla/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                                    <span class="hidden-xs" th:text="${usuario}">Roger Maquera</span>
+                                    <img src="lib/plantilla/dist/img/user1.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs" th:text="${usuario}">Jhon Doe</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- User image -->
                                     <li class="user-header">
-                                        <img src="lib/plantilla/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                        <img src="lib/plantilla/dist/img/user1.jpg" class="img-circle" alt="User Image">
 
                                         <p>
-                                            Roger Maquera - Desarrollador Web
+                                            Jhon Doe - Analista programador
                                             <small>Miembro desde JUN. 2019</small>
                                         </p>
                                     </li>
@@ -165,10 +165,10 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="lib/plantilla/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="lib/plantilla/dist/img/user1.jpg" class="img-circle" alt="User Image">
                         </div>
                         <div class="pull-left info">
-                            <p th:text="${usuario}">Roger Maquera</p>
+                            <p th:text="${usuario}">Jhon Doe</p>
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu" data-widget="tree">
-                        <li class="header">MAIN NAVIGATION</li>
+                        <li class="header">BIENVENIDO</li>
 
                         <li class="active treeview">
                             <a href="#">
@@ -196,7 +196,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="producto"><i class="fa fa-circle-o"></i> Producto</a></li>
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Proveedor</a></li>
+                                <li><a href="proveedor"><i class="fa fa-circle-o"></i> Proveedor</a></li>
 
                                 <li><a href="#"><i class="fa fa-circle-o"></i> Almacen</a></li>
 
