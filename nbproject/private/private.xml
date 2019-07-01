@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/D:/Proyectos/JavaWebSGA/web/view/almacen/listaAlmacen.jsp</file>
             <file>file:/D:/Proyectos/JavaWebSGA/src/java/model/ProveedorModel.java</file>
@@ -23,5 +24,8 @@
             <file>file:/D:/Proyectos/JavaWebSGA/src/java/controller/ProveedorController.java</file>
             <file>file:/D:/Proyectos/JavaWebSGA/web/view/proveedor/actualizaProveedor.jsp</file>
         </group>
+=======
+        <group/>
+>>>>>>> f8b2470e414f2f4a0c6db3c532b5f7ffc9793ce7
     </open-files>
 </project-private>
