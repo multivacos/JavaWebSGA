@@ -3,14 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/service/ProductoService.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/controller/ProveedorController.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/entity/Proveedor.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/model/ProveedorModel.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/model/ProductoModel.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/src/java/service/ProveedorService.java</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/web/view/proveedor/actualizaProveedor.jsp</file>
-            <file>file:/D:/Bibliotecas/Documentos/Proyectos/JavaWebSGA/web/view/proveedor/listaProveedor.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/almacen/listaAlmacen.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/model/ProveedorModel.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/producto/index.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/controller/MainController.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/service/ProductoService.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/controller/ClaseController.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/template/layout.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/service/ClaseService.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/entity/Proveedor.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/main/index.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/proveedor/listaProveedor.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/model/AlmacenModel.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/service/AlmacenService.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/entity/Almacen.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/controller/AlmacenController.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/almacen/actualizaAlmacen.jsp</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/service/ProveedorService.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/src/java/controller/ProveedorController.java</file>
+            <file>file:/D:/Proyectos/JavaWebSGA/web/view/proveedor/actualizaProveedor.jsp</file>
         </group>
     </open-files>
 </project-private>

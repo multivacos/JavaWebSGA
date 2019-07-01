@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import service.AlmacenService;
 
 /**
  *
@@ -84,5 +85,25 @@ public class AlmacenController extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
+ protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String metodo = request.getParameter("metodo");
+        AlmacenService almacenService= new AlmacenService();
+        
+        if (metodo==null) {
+          almacenService.lista(request, response);
+        }else if (metodo.equals("registra")) {
+            almacenService.registra(request, response);
+        }else if (metodo.equals("lista")) {
+            almacenService.lista(request, response);
+        }else if (metodo.equals("actualiza")) {
+            almacenService.actualiza(request, response);
+        }else if (metodo.equals("busca")) {
+            almacenService.busca(request, response);
+        }else if (metodo.equals("elimina")) {
+            almacenService.elimina(request, response);
+        }else if (metodo.equals("ubica")) {
+            almacenService.ubica(request, response);
+        }
+ 
+    }
 }

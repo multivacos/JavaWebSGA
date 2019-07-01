@@ -23,7 +23,7 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <a href="#"><img src="images/almacen.jpg" class="img-responsive" alt="SGA"></a>
+            <a href="almacen"><img src="images/almacen.jpg" class="img-responsive" alt="SGA"></a>
           <div class="caption">
             <h3>Módulo de Almacén</h3>
             <p>Aquí se puede visualizar las entradas y salidas asi como la opción de hacer el respectivo mantenimiento.</p>

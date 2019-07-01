@@ -198,7 +198,7 @@
                                 <li><a href="producto"><i class="fa fa-circle-o"></i> Producto</a></li>
                                 <li><a href="proveedor"><i class="fa fa-circle-o"></i> Proveedor</a></li>
 
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Almacen</a></li>
+                                <li><a href="almacen"><i class="fa fa-circle-o"></i> Almacen</a></li>
 
                             </ul>
                         </li>
